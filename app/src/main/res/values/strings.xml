@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Asus Downloader</string>
+    <string name="delimiter">/</string>
+    <string name="startItem">Start</string>
+    <string name="pauseItem">Pause</string>
+    <string name="removeItem">Remove</string>
+    <string name="welcome_messages">%1$s peers</string>
+    <string name="title_choose_file">Choose a file</string>
+    <string name="context_header_title">Select The Action</string>
+    <string name="text_request_permission_denieded">You must give permissions in order to be able to add a file</string>
+    <string name="auth_complete">Auth complete</string>
+    <string name="auth_error">Auth error. You should exit from another device from web interface</string>
+    <string name="success_action">Success</string>
+    <string name="torrent_already_exist">This torrent already exist in list</string>
+    <string name="add_torrent_by_file">Add torrent by file</string>
+    <string name="add_torrent_by_link">Add torrent by link</string>
+    <string name="start_all_items">Start all items</string>
+    <string name="pause_all_items">Pause all items</string>
+    <string name="clear_all_completed_items">Clear all completed items</string>
+    <string name="preferences">Preferences</string>
+</resources>

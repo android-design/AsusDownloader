@@ -1,5 +1,6 @@
 package com.example.asusdownloader.ui.fragment
 
+import android.widget.Toast
 import com.example.asusdownloader.R
 import com.example.asusdownloader.presentation.presenter.SettingsPresenter
 import com.example.asusdownloader.presentation.view.SettingsView
@@ -11,7 +12,5 @@ class Settings : BaseFragment(), SettingsView {
 
     @InjectPresenter
     internal lateinit var presenter: SettingsPresenter
-
-
 
 }

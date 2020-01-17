@@ -1,7 +1,6 @@
 package com.example.asusdownloader.ui
 
 import android.view.*
-import androidx.appcompat.view.menu.MenuBuilder
 import androidx.recyclerview.widget.RecyclerView
 import com.example.asusdownloader.Const.Companion.TORRENT_STATUS_DOWNLOADING
 import com.example.asusdownloader.R

@@ -7,7 +7,7 @@
     <string name="welcome_messages">%1$s peers</string>
     <string name="title_choose_file">Choose a file</string>
     <string name="context_header_title">Select The Action</string>
-    <string name="text_request_permission_denieded">You must give permissions in order to be able to add a file</string>
+    <string name="text_request_permission_denied">You should give permissions in order to be able to add a file</string>
     <string name="auth_complete">Auth complete</string>
     <string name="auth_error">Auth error. You should exit from another device from web interface</string>
     <string name="success_action">Success</string>

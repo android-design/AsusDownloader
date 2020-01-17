@@ -4,16 +4,13 @@
     <item
         android:id="@+id/startMenuItem"
         android:title="@string/startItem"
-        android:icon="@drawable/ic_start"
         app:showAsAction="ifRoom"/>
     <item
         android:id="@+id/pauseMenuItem"
         android:title="@string/pauseItem"
-        android:icon="@drawable/ic_pause"
         app:showAsAction="ifRoom"/>
     <item
         android:id="@+id/removeMenuItem"
         android:title="@string/removeItem"
-        android:icon="@drawable/ic_clear_all"
         app:showAsAction="ifRoom"/>
 </menu>

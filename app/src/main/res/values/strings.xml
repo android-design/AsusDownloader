@@ -4,12 +4,13 @@
     <string name="startItem">Start</string>
     <string name="pauseItem">Pause</string>
     <string name="removeItem">Remove</string>
-    <string name="welcome_messages">%1$s peers</string>
+    <string name="count_peers">%1$s peers</string>
+    <string name="empty_torrent_name">Undefined</string>
     <string name="title_choose_file">Choose a file</string>
     <string name="context_header_title">Select The Action</string>
     <string name="text_request_permission_denied">You should give permissions in order to be able to add a file</string>
     <string name="auth_complete">Auth complete</string>
-    <string name="auth_error">Auth error. You should exit from another device from web interface</string>
+    <string name="auth_error_already_connect_from_another_ip">Auth error. You should exit from another device from web interface</string>
     <string name="success_action">Success</string>
     <string name="torrent_already_exist">This torrent already exist in list</string>
     <string name="add_torrent_by_file">Add torrent by file</string>
@@ -18,4 +19,15 @@
     <string name="pause_all_items">Pause all items</string>
     <string name="clear_all_completed_items">Clear all completed items</string>
     <string name="preferences">Preferences</string>
+    <string name="error_need_login">You should set login</string>
+    <string name="error_need_password">You should set password</string>
+    <string name="error_need_server_port">You should set server port</string>
+    <string name="error_need_address">You should set server address</string>
+    <string name="title_server_settings">Server settings</string>
+    <string name="edit_text_server_address">Server address</string>
+    <string name="edit_text_server_port">Server port</string>
+    <string name="title_authorization">Authorization</string>
+    <string name="edit_text_login">Login</string>
+    <string name="edit_text_password">Password</string>
+    <string name="auth_error_invalid_login_or_password">Invalid username or password</string>
 </resources>

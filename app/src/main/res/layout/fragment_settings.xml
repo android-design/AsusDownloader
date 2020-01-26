@@ -4,20 +4,18 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/titleSettingServer"
         style="@style/TextAppearance.AppCompat.Medium"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Server settings"
+        android:text="@string/title_server_settings"
         android:textStyle="bold" />
 
     <EditText
         android:id="@+id/serverAddress"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:contentDescription="Server address"
+        android:contentDescription="@string/edit_text_server_address"
         android:ems="10"
-        android:hint="Server address"
         android:inputType="text"
         android:singleLine="true" />
 
@@ -25,9 +23,8 @@
         android:id="@+id/serverPort"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:contentDescription="Server port"
+        android:contentDescription="@string/edit_text_server_port"
         android:ems="10"
-        android:hint="Server port"
         android:inputType="text"
         android:singleLine="true" />
 
@@ -39,11 +36,10 @@
         android:visibility="visible" />
 
     <TextView
-        android:id="@+id/textView2"
         style="@style/TextAppearance.AppCompat.Medium"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Authorization"
+        android:text="@string/title_authorization"
         android:textStyle="bold" />
 
     <EditText
@@ -51,7 +47,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Login"
+        android:hint="@string/edit_text_login"
         android:inputType="text" />
 
     <EditText
@@ -59,7 +55,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Password"
-        android:inputType="textPassword" />
+        android:hint="@string/edit_text_password"
+        android:inputType="textPassword"
+        android:autofillHints="password" />
 
 </LinearLayout>

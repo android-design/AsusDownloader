@@ -3,21 +3,21 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
-        <item name="actionOverflowButtonStyle">@style/DotsLightTheme</item>
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryDarkColor</item>
+        <item name="colorAccent">@color/secondaryColor</item>
+<!--        <item name="actionOverflowButtonStyle">@style/DotsLightTheme</item>-->
     </style>
 
     <style name="Toolbar">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">?attr/actionBarSize</item>
         <item name="theme">@style/ThemeOverlay.AppCompat.DayNight.ActionBar</item>
-        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:background">@color/primaryColor</item>
     </style>
 
-    <style name="DotsLightTheme" parent="@style/Widget.AppCompat.ActionButton.Overflow">
-        <item name="android:tint">@android:color/white</item>
-    </style>
+<!--    <style name="DotsLightTheme" parent="@style/Widget.AppCompat.ActionButton.Overflow">-->
+<!--        <item name="android:tint">@android:color/white</item>-->
+<!--    </style>-->
 
 </resources>

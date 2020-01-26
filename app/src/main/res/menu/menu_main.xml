@@ -11,7 +11,8 @@
         android:id="@+id/add_link_torrent"
         android:icon="@drawable/ic_link"
         android:title="@string/add_torrent_by_link"
-        app:showAsAction="ifRoom" />
+        app:showAsAction="ifRoom"
+        android:visible="false"/>
 
     <item
         android:id="@+id/start_all_items"
@@ -36,6 +37,6 @@
             android:id="@+id/settings"
             android:orderInCategory="4"
             android:title="@string/preferences"
-            app:showAsAction="ifRoom" />
+            app:showAsAction="never" />
     </group>
 </menu>

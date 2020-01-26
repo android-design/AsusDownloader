@@ -6,8 +6,7 @@
     android:layout_margin="5dp"
     android:orientation="vertical"
     app:cardCornerRadius="10dp">
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:longClickable="true"
@@ -22,6 +21,13 @@
         android:textStyle="bold"
         android:ellipsize="end"
         tools:text="Test test testTest test testTest test testTest test testTest test testTest test testTest test testt test testTest test testTest test testTest test testt test testTest test testTest test testTest test test" />
+
+    <TextView
+        android:id="@+id/volume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        tools:text="3 Gb" />
 
     <ProgressBar
         android:id="@+id/progressBar"
@@ -48,7 +54,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:hint="Count peers"
             android:textAlignment="center"
             tools:text="10" />
 

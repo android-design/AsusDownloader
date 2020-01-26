@@ -15,8 +15,7 @@ import java.util.concurrent.TimeUnit
 import javax.inject.Inject
 import javax.inject.Singleton
 
-@Singleton
-class AsusServerProvider @Inject constructor(val retrofit: Retrofit, val preferences: Preferences) : RemoteDataProvider {
+class AsusServerProvider @Inject constructor(retrofit: Retrofit, val preferences: Preferences) : RemoteDataProvider {
 
     private val restApi: AsusServiceRestApi = retrofit.create(AsusServiceRestApi::class.java)
 

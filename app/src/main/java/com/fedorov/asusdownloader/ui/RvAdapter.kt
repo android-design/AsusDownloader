@@ -5,6 +5,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.fedorov.asusdownloader.settings.Const.Companion.TORRENT_STATUS_DOWNLOADING
 import com.fedorov.asusdownloader.R
 import com.fedorov.asusdownloader.data.model.Torrent
+import com.fedorov.asusdownloader.settings.Const.Companion.TORRENT_STATUS_FINISHED
 import kotlinx.android.synthetic.main.rv_item.view.*
 
 class RvAdapter(val onContextMenuShow: ((Torrent) -> Unit)? = null) :
@@ -59,17 +60,27 @@ class RvAdapter(val onContextMenuShow: ((Torrent) -> Unit)? = null) :
             contextMenu.setHeaderTitle(R.string.context_header_title)
 
             contextMenu.add(Menu.NONE, R.id.startMenuItem, Menu.NONE, R.string.startItem)
-            contextMenu.getItem(0).isEnabled = isEnabledForStart(mTorrent.status)
+            contextMenu.getItem(0).isEnabled =
+                isStatusDownloading(mTorrent.status) && !isStatusFinished(mTorrent.status)
             contextMenu.add(Menu.NONE, R.id.pauseMenuItem, Menu.NONE, R.string.pauseItem)
-            contextMenu.getItem(1).isEnabled = !isEnabledForStart(mTorrent.status)
+            contextMenu.getItem(1).isEnabled = !isStatusDownloading(mTorrent.status)
             contextMenu.add(Menu.NONE, R.id.removeMenuItem, Menu.NONE, R.string.removeItem)
         }
 
-        private fun isEnabledForStart(status: String): Boolean {
-            if (status.equals(TORRENT_STATUS_DOWNLOADING, true))
+        private fun isStatusDownloading(status: String): Boolean {
+            if (status.equals(TORRENT_STATUS_DOWNLOADING, true)
+            )
                 return false
 
             return true
+        }
+
+        private fun isStatusFinished(status: String): Boolean {
+            if (status.equals(TORRENT_STATUS_FINISHED, true)
+            )
+                return true
+
+            return false
         }
     }
 }

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="8dp">
 
     <TextView
         style="@style/TextAppearance.AppCompat.Medium"
@@ -25,7 +26,7 @@
         android:layout_height="wrap_content"
         android:contentDescription="@string/edit_text_server_port"
         android:ems="10"
-        android:inputType="text"
+        android:inputType="number"
         android:singleLine="true" />
 
     <View

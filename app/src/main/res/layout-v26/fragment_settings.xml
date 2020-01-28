@@ -2,7 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:padding="8dp">
 
     <TextView
         style="@style/TextAppearance.AppCompat.Medium"
@@ -28,7 +29,7 @@
         android:contentDescription="@string/edit_text_server_port"
         android:ems="10"
         android:importantForAutofill="no"
-        android:inputType="text"
+        android:inputType="number"
         android:singleLine="true" />
 
     <View
